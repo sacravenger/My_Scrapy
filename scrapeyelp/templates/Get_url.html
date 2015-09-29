@@ -1,0 +1,7 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<title>Get Urls</title>
+    <h1>Please enter the Url you want to scrape</h1>
+    <form method="POST" class="post-GetUrl">{% csrf_token %}
+        {{ Geturl.as_p }}
+        <button type="submit" class="save btn btn-default">Save</button>
+    </form>
